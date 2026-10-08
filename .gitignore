@@ -1,0 +1,24 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Full generated dataset (regenerate with `python run.py`); only the small
+# data/sample_shipments.csv is committed for illustration.
+data/shipments.csv
+
+# Pipeline run log
+run_output.log
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

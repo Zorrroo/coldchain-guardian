@@ -1,0 +1,17 @@
+# ColdChain Guardian - pinned dependencies (Python 3.11+ ; built on 3.14)
+#
+# Core (required):
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+seaborn==0.13.2
+joblib==1.6.0
+pytest==9.1.1
+
+# Optional accelerators / explainability. The pipeline auto-detects these and
+# falls back gracefully if they are absent (LightGBM -> HistGradientBoosting;
+# SHAP -> permutation importance), so a failed install never stops the project.
+lightgbm==4.7.0
+shap==0.52.0
