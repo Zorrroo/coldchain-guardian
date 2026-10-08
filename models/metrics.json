@@ -1,0 +1,44 @@
+{
+  "dataset_rows": 20000,
+  "spoilage_rate": 0.3002,
+  "random_seed": 42,
+  "cv_folds": 5,
+  "model_comparison": {
+    "Logistic Regression": {
+      "cv_roc_auc_mean": 0.9143293270574449,
+      "cv_roc_auc_std": 0.00454262100281141
+    },
+    "Random Forest": {
+      "cv_roc_auc_mean": 0.9071989793199648,
+      "cv_roc_auc_std": 0.0032140552581405085
+    },
+    "LightGBM": {
+      "cv_roc_auc_mean": 0.9139681052794847,
+      "cv_roc_auc_std": 0.003677741916696775
+    }
+  },
+  "best_model": "Logistic Regression",
+  "best_cv_roc_auc": 0.9143534662212067,
+  "best_params": {
+    "clf__C": 0.1
+  },
+  "validation_metrics": {
+    "accuracy": 0.865,
+    "precision": 0.8249754178957719,
+    "recall": 0.6985845129059117,
+    "f1": 0.7565374211000901,
+    "roc_auc": 0.9125761282056547
+  },
+  "test_metrics": {
+    "accuracy": 0.867,
+    "precision": 0.8146754468485419,
+    "recall": 0.7210657785179018,
+    "f1": 0.765017667844523,
+    "roc_auc": 0.9123771157713934
+  },
+  "regression_metrics": {
+    "mae": 11.651549230037075,
+    "rmse": 16.244418123942335,
+    "r2": 0.8538879358492055
+  }
+}
